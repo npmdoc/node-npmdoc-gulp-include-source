@@ -70,15 +70,6 @@
 
         </li>
 
-        <li>
-
-            <a class="apidocElementLiA" href="#apidoc.element.gulp-include-source.toString">
-            function <span class="apidocSignatureSpan">gulp-include-source.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
-
-        </li>
-
     </ol></li>
 
 </ol></div>
@@ -125,36 +116,6 @@
   return stream;
 }</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
-    </ul>
-
-
-
-    <h2>
-        <a href="#apidoc.element.gulp-include-source.toString" id="apidoc.element.gulp-include-source.toString">
-        function <span class="apidocSignatureSpan">gulp-include-source.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-  return filename;
-}
-
-function parseFiles(source, cwd) {
-
-  if( source.indexOf(&#x27;list:&#x27;) === 0 ) {
-    var cleanSrc = source.replace(&#x27;list:&#x27;, &#x27;&#x27;);
-    return fs.readFileSync( cleanSrc ).<span class="apidocCodeKeywordSpan">toString</span>().split(&#x27;\n&#x27;);
-  }
-
-  return glob.sync( source, { cwd : cwd } );
-}
-
-function injectFiles(file, options) {
-...</pre></li>
     </ul>
 
 
